@@ -1,0 +1,135 @@
+#include <iostream> 
+#include <conio.h>
+#include <stdio.h>
+#include <string.h> 
+#Include <stdlib.h>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	struct
+}
+char
+nama[30],kode-status,jabatan[20],status[10],but
+an[15];
+ int nip,nakar,kode_jab;
+ long tunjangan,gapok,total_gaji;
+ }karyawan[10];
+ 
+ long grandtotal=0;
+ char bulan[15],lagi;
+ int a,b;
+ 
+ awal 
+ count<<endi;
+ count<<"Jumlah karyawan :",cin>>b;
+ count<<"Bulan Data Karyawan"<<endi;
+ count<<"======================="<<endi;
+ count<<endi;
+ 
+ for(a=1;a<=b;a++)
+ {
+	 cout<<"Data Karyawan ke-"<<a<<endi;
+	 cout<<"Nip Karyawan
+	";cin>>karyawan[a].nip;
+	cout<<"Nama Karyawan  
+	";cin>>Karyawan[a].nama;
+	cout<<"kode Jabatan [1/2];
+	";cin"Karyawan[a].kode_status;
+	cout<<endl;
+	
+	if (Karyawan[a].Kode_jab= =1)
+	{
+		strcpy(Karyawan[a].jabatan"Administrasi");
+		Karyawan[a].gapok = 800000;
+	   
+	   switch(Karyawan[a].kode_status)
+	}
+		case "S":
+		case "s":
+		Karyawan[a].tunjangan = 100000;
+		strcpy(karyawan[a].status."Single");
+	break;
+	
+		case 'M':
+		case 'm':
+			Karyawan[a].tunjangan = 200000;
+			strcpy(Karyawan[a].status."Menikah");
+		break;
+		default:
+			cout<<"Anda Salah Kode"<<endi;
+		goto atas;
+ }
+ }
+	else if(Karyawan[a].kode_jab= =2)
+	{
+		strcpy(Karyawan[a].jabatan."operasional");
+		Karyawan[a].gapok = 850000;
+		switch(Karyawan[a].Kode_status)
+	}
+		case 'S':
+		case 's':
+			Karyawan[a].tunjangan =100000;
+			strcpy(Karyawan[a].status."Single");
+		break;
+		
+		case 'M':
+		case 'm'
+		 Karyawan[a].tunjangan = 200000;
+		 strcpy(Karyawan[a].status."Menikah");
+		break;
+		default:
+		 cout<<"Anda Salah Kode"<<endi:
+		 goto atas;
+		 }
+	}
+	else
+		cout<<"Kode yang anda masukan salah"
+	<<endl;
+	 cout<<endl;
+	 Karyawan[a].total_gaji = Karyawan[a].gapok+Karyawan[a].tunjangan:
+	 }
+	 puts("\t\t\t Daftar Gaji Karyawan");
+	 puts("\t\t "PT YUVERTY SEJAHTERA");
+	 cout<<endl;
+	 count<<"==============================
+	 ========================================
+	 ========================================"<<endl;
+	 
+	 for(a=1;a<=b;a++)
+	 {
+		 cout<<setiosflags(ios::left)<<Setw(4)<<a;
+		 cout<<Setiosflags(ios::left)<<Setw(11)
+	 <<Karyawan[a].nip;
+	 cout<<Setiosflags(ios::left<<Setw(11)
+	 <<Karyawan[a].nakar;
+	 cout<<setiosflag(ios::left)<<Setw(13)
+	 <<Karyawan[a].Jabatan
+	 cout<<setiosflag(ios::left)<<Setw(10)
+	 <<Karyawan[a].status;
+	 cout<<Setiosflags(ios::left)<<Setw(12)
+	 <<Karyawan[a].gapok;
+	 cout<<setiosflag(ios::left)<<Setw(11)
+	 <<Karyawan[a].total_gaji;
+	 grandtotal = grandtotal+
+	 Karyawan[a].total_gaji;
+	  cout<<endl;
+	 }
+	 cout<<"===================================
+	 ===================================
+	 ============"<<endl;
+	 cout<<"\t\t\t\t\t Total Gaji Karyawan RP."
+	 <<grandtotal<<endl;
+	 cout<<endl;
+	 cout<<"\t\t\ingin input lagi [Y/T]: ";cin>>lagi;
+	 if(lagi=="Y"||lagi=='Y')
+		 goto awal;
+	 else
+		 goto akhir;
+	 getch();
+	 akhir:
+	 
+	 return 0;
+	}
+	
